@@ -92,12 +92,7 @@ const note = mongoose.model("note", new mongoose.Schema({
             "note": { type: String } ,
 
 }));
-const captcha = mongoose.model("captcha", new mongoose.Schema({
-            _id: { type: mongoose.Schema.Types.ObjectId, required: true, auto: true },
-            "id": { type: String } ,
-            "captcha": { type: String } ,
 
-}));
 const warns = mongoose.model("warns", new mongoose.Schema({
             _id: { type: mongoose.Schema.Types.ObjectId, required: true, auto: true },
             "guild": { type: String } ,
