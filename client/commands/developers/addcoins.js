@@ -17,7 +17,7 @@ let admins = ['463208341804548097', '900452401528594502']
  if(!admins.includes(msg.author.id)) return;
 let level = 0
 let mention = true
-let user = msg.mentions[0]
+let user = msg.mentions[0]                
 if(!user) {
 let user1 = await client.getRESTUser(args[0]).catch(err =>{})
 if(!user1) user1 = msg.author
